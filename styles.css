@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    z-index: 1000; /* Keeps the header above all other elements */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.circle-logo {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.center-header {
+    margin: 0 auto;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    flex-grow: 1; /* Ensures the title is centered */
+    transform: translateX(-50px); /* Adjust to center with the logo */
+    transform: translateY(-50px);
+}
+
+
+.logo-link {
+    display: inline-block;
+    text-decoration: none; /* Removes underline */
+}
+
+
+.logo h1 {
+    font-size: 1.5em;
+    color: #333;
+
+}
+
+.greeting p {
+    font-size: 1em;
+}
+
+main {
+    padding: 20px;
+}
+
+.advertisements {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 600px; /* Set max width for the ad section */
+    margin: 0 auto; /* Center it on the page */
+}
+
+.ad-carousel {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Set the height of the carousel */
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.ad-carousel img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.ad-carousel img.active {
+    opacity: 1; /* Only the active image is visible */
+}
+
+ 
+
+.services .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.service-item {
+    position: relative;
+    flex: 1 1 calc(25% - 10px);
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.service-image img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-item h3 {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+
+
+.see-more {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.see-more:hover {
+    text-decoration: underline;
+}
+
+.quote button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quote button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ccc;
+}
+
+.contact-details ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.contact-details li {
+    margin-bottom: 5px;
+}
+
+
